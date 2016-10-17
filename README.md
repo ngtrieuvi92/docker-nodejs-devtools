@@ -1,7 +1,7 @@
 # Node.js w/ Bower, Grunt & Gulp
 ## This Docker image has been setup to avoid permission issues when using Docker Volumes, implement from this tutorial [HANDLING PERMISSIONS WITH DOCKER VOLUMES](https://denibertovic.com/posts/handling-permissions-with-docker-volumes/)
 
-It can run with UID of current user in your machine to avoid permission issue, default UID is 9001, not root user
+It can run with UID of current user in your machine to avoid permission issue, default UID is 1000, not root user
 Example:`docker run -it -e LOCAL_USER_ID=`id -u $USER` ngtrieuvi92/nodejs-devtools`
 
 This repository contains a **Dockerfile** of [Node.js](http://nodejs.org/) w/ [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/) for [automated builds](https://hub.docker.com/r/ngtrieuvi92/nodejs-devtools/) published to the public [Docker Hub Registry](https://hub.docker.com/).
